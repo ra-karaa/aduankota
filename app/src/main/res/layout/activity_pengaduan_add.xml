@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Buat Aduan"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:fontFamily="@font/montserrat" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_below="@id/relLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/kategori"
+                        android:layout_width="match_parent"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Pilih Kategori"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="50dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="10dp"/>
+
+
+                    <EditText
+                        android:id="@+id/putNama"
+                        android:layout_width="match_parent"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Nama Terlapor"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/transparent"
+                        android:layout_height="50dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <EditText
+                        android:id="@+id/putAlamat"
+                        android:layout_width="match_parent"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Alamat Kejadian"
+                        android:inputType="textMultiLine"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/transparent"
+                        android:layout_height="50dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <EditText
+                        android:id="@+id/putBentuk"
+                        android:layout_width="match_parent"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Bentuk Perbuatan"
+                        android:inputType="textMultiLine"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/transparent"
+                        android:layout_height="50dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <EditText
+                        android:id="@+id/putSaksi"
+                        android:layout_width="match_parent"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Saksi yang ada"
+                        android:inputType="textMultiLine"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/transparent"
+                        android:layout_height="50dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <EditText
+                        android:id="@+id/putKerugian"
+                        android:layout_width="match_parent"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Kerugian Korban"
+                        android:inputType="textMultiLine"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/transparent"
+                        android:layout_height="50dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <EditText
+                        android:id="@+id/putInformasi"
+                        android:layout_width="match_parent"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Informasi Tambahan"
+                        android:inputType="textMultiLine"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/transparent"
+                        android:layout_height="50dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/btnNext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:text="next"
+            android:fontFamily="@font/montserrat" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

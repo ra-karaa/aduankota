@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A0894D</color>
+    <color name="colorPrimaryDark">#A0894D</color>
+    <color name="colorAccent">#000000</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="grey">#FFC7C2C2</color>
+    <color name="published">#4CAF50</color>
+    <color name="decline">#F44336</color>
+</resources>

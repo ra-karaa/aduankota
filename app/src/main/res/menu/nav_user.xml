@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="HOME">
+    </item>
+
+    <item
+        android:id="@+id/ic_info"
+        android:icon="@drawable/ic_attachment_black_24dp"
+        android:title="BERITA">
+    </item>
+
+    <item
+        android:id="@+id/ic_adu"
+        android:icon="@drawable/ic_add_circle_black_24dp"
+        android:title="PENGADUAN">
+    </item>
+
+    <item
+        android:id="@+id/ic_tutorial"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="PANDUAN">
+    </item>
+
+    <item
+        android:id="@+id/ic_profil"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="PROFIL">
+    </item>
+
+</menu>

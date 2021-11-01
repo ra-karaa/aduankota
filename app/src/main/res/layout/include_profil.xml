@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+    android:id="@+id/line1"
+    android:background="@color/putih"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/bg">
+
+
+            <ImageView
+                android:id="@+id/imgToggle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_menu_black_24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/getFotoMember"
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                android:layout_marginBottom="5dp"/>
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ubahfoto"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    android:layout_marginLeft="-25dp"-->
+<!--                    android:src="@drawable/ic_edit_black_24dp"-->
+<!--                    android:layout_height="30dp"/>-->
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/getNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fietra Prabaskara"
+                android:textSize="20dp"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/getNik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6472090902970001"
+                android:textSize="15dp"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Riwayat Pengaduan !"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="2dp"/>
+</LinearLayout>
+
+<RelativeLayout
+    android:id="@+id/line2"
+    android:layout_below="@id/line1"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/putih"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="60dp"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/shimmer"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/resikelHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/kosong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/icon_empty" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+<include layout="@layout/navigation_user"/>
+
+</RelativeLayout>
